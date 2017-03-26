@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+</head>
+<body>
+	<h1>Please Login...</h1><br>
+	<!-- For the container to work, the action of the HTML login form MUST
+	be: j_security_check -->
+	<form method="post" action="j_security_check">
+	
+	<!--The Container requires that the HTTP request will store the user name 
+	in : j_username  -->
+		Enter user name:<input type="text" name="j_username"><br><br>
+		
+	<!-- The Container requires that the HTTP request will store the password
+	in : j_password -->	
+		Enter user password:<input type="password" name="j_password"><br>
+		
+		<input type="submit" value="Enter">
+	</form>
+	
+</body>
+</html>
